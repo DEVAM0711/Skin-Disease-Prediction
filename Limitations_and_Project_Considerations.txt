@@ -1,4 +1,4 @@
-STEP 12 — LIMITATIONS AND PROJECT CONSIDERATIONS
+LIMITATIONS AND PROJECT CONSIDERATIONS
 =================================================
 
 1. Small Dataset
