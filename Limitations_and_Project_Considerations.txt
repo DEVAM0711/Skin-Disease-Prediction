@@ -1,0 +1,57 @@
+STEP 12 — LIMITATIONS AND PROJECT CONSIDERATIONS
+=================================================
+
+1. Small Dataset
+----------------
+The dataset contains 366 records and 34 input features. A larger dataset could
+provide more representative examples.
+
+2. Class Imbalance
+------------------
+The six classes are not equally distributed:
+
+Class 1: 30.60%
+Class 2: 16.67%
+Class 3: 19.67%
+Class 4: 13.39%
+Class 5: 14.21%
+Class 6: 5.46%
+
+Therefore, accuracy alone should not be used to evaluate the model. Macro F1,
+weighted F1, precision, recall, and class-wise metrics should also be
+considered.
+
+3. Small Test Set
+-----------------
+The test set contains 74 records, so individual predictions can have a
+noticeable effect on test performance.
+
+4. Missing Age Values
+---------------------
+The original Age column contained 8 missing values. The invalid '?' values
+were converted to missing values and Age was converted to numeric format.
+
+5. Highly Correlated Features
+-----------------------------
+Several features showed strong correlations. For example:
+
+melanin_incontinence ↔ vacuolisation_and_damage_of_basal_layer
+Correlation: 0.941659
+
+These relationships should be considered when interpreting feature
+importance.
+
+6. External Validation
+----------------------
+The final model should be tested on an independent external dataset before
+any real-world clinical application.
+
+7. Clinical Validation
+----------------------
+This project demonstrates machine-learning classification and has not
+established clinical validity or real-world diagnostic performance.
+
+8. Medical Safety
+-----------------
+The model should only be considered a decision-support/educational system.
+It should not independently determine diagnosis or treatment.

@@ -1,0 +1,46 @@
+STEP 11 — DOCTOR SUGGESTIONS / EARLY IDENTIFICATION
+================================================
+
+Purpose
+-------
+The machine-learning model can support early identification of a possible skin
+disease class. It is a decision-support tool and does not replace a doctor's
+diagnosis.
+
+Workflow
+--------
+Patient
+   ↓
+Clinical Assessment
+   ↓
+Clinical + Histopathological Features
+   ↓
+ML Decision Support
+   ↓
+Further Evaluation if Required
+   ↓
+Doctor's Final Assessment
+
+Example Prediction
+------------------
+Predicted Class: 2
+
+Class Probabilities:
+Class 1: 7.93%
+Class 2: 44.29%
+Class 3: 1.08%
+Class 4: 21.50%
+Class 5: 20.54%
+Class 6: 4.66%
+
+Interpretation
+--------------
+The model predicted Class 2 because it had the highest probability (44.29%).
+However, this probability is not overwhelmingly high. Therefore, the result
+should be treated as supporting information rather than a definitive
+diagnosis.
+
+Important
+---------
+A qualified medical professional should make the final diagnosis using
+clinical examination and other appropriate diagnostic evidence.

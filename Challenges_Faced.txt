@@ -1,0 +1,101 @@
+STEP 13 — CHALLENGES FACED
+============================
+
+1. Missing Age Values
+---------------------
+Challenge:
+The Age column initially contained '?' values, resulting in 8 missing
+records.
+
+Approach:
+The '?' values were converted to missing values, Age was converted to numeric
+format, and the missing values were handled during preprocessing.
+
+2. Imbalanced Class Distribution
+--------------------------------
+Challenge:
+The six disease classes were not equally represented.
+
+Approach:
+A stratified train-test split was used to approximately preserve class
+proportions in training and testing. Macro F1 was also used to evaluate
+performance across classes.
+
+3. Small Dataset
+----------------
+Challenge:
+The dataset contains only 366 records with 34 input features.
+
+Approach:
+Cross-validation was used to obtain a more stable estimate of model
+performance.
+
+4. Highly Correlated Features
+-----------------------------
+Challenge:
+Several clinical and histopathological features showed strong correlations.
+
+Examples:
+- melanin_incontinence and vacuolisation_and_damage_of_basal_layer
+- vacuolisation_and_damage_of_basal_layer and saw-tooth_appearance_of_retes
+- follicular_horn_plug and perifollicular_parakeratosis
+
+Approach:
+Correlation analysis and feature-importance analysis were performed to
+understand relationships among features.
+
+5. Model Selection
+------------------
+Challenge:
+Different machine-learning models produced different performance levels.
+
+Approach:
+Models were compared using accuracy, precision, recall, F1 score, Macro F1,
+and cross-validation results.
+
+6. Hyperparameter Tuning
+------------------------
+Challenge:
+Default model parameters may not provide the best performance.
+
+Approach:
+Hyperparameter tuning was performed using cross-validation.
+
+Final Random Forest parameters:
+- max_depth = None
+- max_features = sqrt
+- min_samples_leaf = 1
+- min_samples_split = 10
+- n_estimators = 100
+
+Best CV Macro F1:
+0.977
+
+7. Model Interpretability
+-------------------------
+Challenge:
+A high-performing model should also provide information about important
+features.
+
+Approach:
+Random Forest feature importance and permutation feature importance were
+analyzed.
+
+8. Final Model Performance
+--------------------------
+Final Random Forest:
+
+Accuracy     : 0.9730
+Precision    : 0.9730
+Recall       : 0.9730
+F1 Score     : 0.9730
+Macro F1     : 0.9694
+Weighted F1  : 0.9730
+
+The confusion matrix showed the main classification errors between Class 2
+and Class 4.
+
+Conclusion
+----------
+The main challenges were addressed using preprocessing, stratified sampling,
+cross-validation, hyperparameter tuning, and feature-importance analysis.
