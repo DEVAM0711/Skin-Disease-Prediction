@@ -1,4 +1,4 @@
-STEP 13 — CHALLENGES FACED
+CHALLENGES FACED DURING PROJECT 
 ============================
 
 1. Missing Age Values
