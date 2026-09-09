@@ -392,13 +392,13 @@ The model can potentially support early identification by providing an additiona
 ```text
 Skin-Disease-Prediction/
 │
-├── Skin_Disease_Prediction.ipynb
+├── Skin_Disorder_Prediction.ipynb
 ├── skin_disease_random_forest_pipeline.pkl
 ├── Doctor_Suggestions_Early_Identification.txt
 ├── Limitations_and_Project_Considerations.txt
 ├── Challenges_Faced.txt
 ├── README.md
-├── Data/
+└── Data/
     └── skin_dermatology.csv
     └── skin_dermatology_clean.csv
 
